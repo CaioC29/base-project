@@ -1,9 +1,12 @@
 import { router } from 'expo-router';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function TabTwoScreen() {
 	return (
-		<View style={{ flex: 1 }}>
+
+		<SafeAreaView style={{ flex: 1 }}>
+		<View>
 			<Text>Usuario</Text>
 
 
@@ -11,6 +14,7 @@ export default function TabTwoScreen() {
 				<Text>Sair</Text>
 			</TouchableOpacity>
 		</View>
+		</SafeAreaView>
 	);
 }
 
